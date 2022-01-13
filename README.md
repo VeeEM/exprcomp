@@ -29,6 +29,7 @@ output.
 
 ## Demo
 ```
+$ make
 $ echo "(1 + 2) * 40 + 3" > example
 $ ./exprcomp example
 
