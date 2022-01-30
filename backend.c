@@ -12,7 +12,7 @@ static void print_ast(Expression *expr, int level) {
   switch(expr->type) {
     case 'D':
       print_spaces(level);
-      printf("%d\n", expr->value);
+      printf("%lld\n", expr->value);
       break;
     case 'P':
       print_spaces(level);
