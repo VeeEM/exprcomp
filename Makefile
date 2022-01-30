@@ -1,14 +1,14 @@
 
 OBJS = main.o lex.o parser.o error.o backend.o
-CFLAG = -Wall -g -Wextra -MMD -MP
-LDFLAG = -lm
+CFLAGS = -Wall -g -Wextra -MMD -MP
+LDFLAGS = -lm
 CC = gcc
 
 exprcomp: $(OBJS)
-	$(CC) $^ -o $@ $(LDFLAG)
+	$(CC) $^ -o $@ $(LDFLAGS)
 
 %.c.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGSS) -c $< -o $@
 
 .PHONY : clean
 clean:
